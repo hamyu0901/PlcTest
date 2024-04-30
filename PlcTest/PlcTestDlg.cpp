@@ -224,7 +224,7 @@ bool CPlcTestDlg::LoadXMLConfig()
 
 	CString strModulePath = CFileManagement::GetModulePath();
 	strRootPath.Format(_T("%s"), CFileManagement::GetFileRootPath(strModulePath));
-	strFileName.Format(_T("%s%s\\%s\\%s\\%s"), strRootPath, _T("DoolimData"), _T("Paint"), _T("Config"), _T("SPSDataCollectorNew.xml"));
+	strFileName.Format(_T("%s%s\\%s\\%s\\%s"), strRootPath, _T("DoolimData"), _T("Paint"), _T("Config"), _T("SPSDataCollector_plcTest.xml"));
 	if (CFileManagement::FileExists(strFileName) == FALSE)
 	{
 		AfxMessageBox(_T("[DataCollectorNew.xml] is not exist!"), MB_ICONSTOP);
